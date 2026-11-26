@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>praktikum 6 mandiri </title>
+</head>
+<body>
+  <h1>Pengolah Nilai Mahasiswa</h1>
+  <p>Lihat Hasil Melalui Console (f12).</p>
+
+  <script>
+    const namaMahasiswa = "Isra Agustina";
+    const nilaiTugas = 90;
+    const nilaiUTS = 91;
+    const nilaiUAS = 95;
+
+    const nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
+
+    let statusKelulusan;
+    if (nilaiAkhir >= 60) {
+      statusKelulusan = "LULUS";
+    } else {
+      statusKelulusan = "TIDAK LULUS";
+    }
+
+    console.log("Nama Mahasiswa : " + namaMahasiswa);
+    console.log("Nilai Akhir    : " + nilaiAkhir);
+    console.log("Status         : " + statusKelulusan);
+  </script>
+</body>
+</html>
